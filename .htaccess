@@ -1,0 +1,13 @@
+ErrorDocument 404 https://situspkv.id/404.sakongkiu.html
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?situspkv.id$ 
+RewriteRule ^(.*)$ http://162.213.210.213/situspkv.id/$1 [L,R=302]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
